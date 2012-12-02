@@ -5,10 +5,11 @@ import android.os.Bundle;
 import android.widget.TextView;
 public class MainActivity extends Activity {
 	private TextView coucou = null;
-	@Override
+	
 		public void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			coucou = new TextView(this);
-			coucou.setText("Salut Gogo !");
+			coucou.setText("Salut c'est Pinpin !");
+			setContentView(coucou);
 			}
 }
