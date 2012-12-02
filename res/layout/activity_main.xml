@@ -1,7 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+     >
 
     <TextView
         android:id="@+id/text"
@@ -14,16 +16,30 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Message_Accueil"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Welcome"
         android:textSize="8sp" />
-    
+
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:text="@string/HomeButton" />
+
     <EditText
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:hint="@string/Edittext"
-		android:inputType="textMultiLine"
-		android:lines="1" />
+        android:id="@+id/Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonHome"
+        android:ems="10"
+        android:hint="@string/Edittext"
+        android:layout_centerHorizontal="true"
+        android:inputType="textMultiLine"
+        android:lines="1" />
 
 </RelativeLayout>
