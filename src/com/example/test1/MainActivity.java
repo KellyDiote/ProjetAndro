@@ -12,8 +12,6 @@ public class MainActivity extends Activity {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.activity_main);
 			
-			text1 = (TextView)findViewById(R.id.textView2);
-			text1.setPadding(250, 60, 10, 90);
 			
 			setContentView(R.layout.activity_main);			
 			}

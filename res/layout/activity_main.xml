@@ -1,34 +1,57 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" 
-    android:orientation="vertical"
-     >
-
-  
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="@string/Welcome"
-        android:textSize="15sp" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:checked="true"
-        android:text="@string/checkBox" />
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+android:background="@drawable/proandro">
 
     <Button
-        android:id="@+id/buttonHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/HomeButton" />
+android:id="@+id/calcul"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Stores"
+/>
+    <ProgressBar
+        android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	style="?android:attr/progressBarStyleHorizontal"
+	android:progress="50"
+	android:max="100"
+	android:secondaryProgress="80"/>
+        <Button
+android:id="@+id/calcul"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Lumière"
+/>
+        <ProgressBar
+        android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	style="?android:attr/progressBarStyleHorizontal"
+	android:progress="50"
+	android:max="100"
+	android:secondaryProgress="80"/>
+<RadioGroup
+android:id="@+id/group"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:checkedButton="@+id/radio2"
+android:orientation="horizontal"
+>
+<RadioButton
+android:id="@+id/radio1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Mode manuel"
+/><RadioButton
+android:id="@+id/radio2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Mode automatique"
+/>
 
-</RelativeLayout>
+</RadioGroup>
+
+
+</LinearLayout>
