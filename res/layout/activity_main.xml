@@ -13,10 +13,11 @@ android:background="@drawable/proandro">
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentLeft="true"
-    android:layout_marginTop="16dp"
+    android:layout_marginTop="20dp"
     android:onClick="pageSettings"
-    android:text="Lumière" />
-<SeekBar
+    android:text="@+id/light"/>
+    
+ <SeekBar
     android:id="@+id/seekBar_light"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
@@ -29,7 +30,7 @@ android:background="@drawable/proandro">
     android:layout_alignParentLeft="true"
     android:layout_below="@+id/seekBar_light"
     android:layout_marginTop="18dp"
-    android:text="Stores" />
+    android:text="@+id/shutter" />
 
 <SeekBar
     android:id="@+id/seekBar_stores"
@@ -38,6 +39,13 @@ android:background="@drawable/proandro">
     android:layout_alignParentLeft="true"
     android:layout_below="@id/ButtonStores"
     android:progress="50" />
+<TextView 
+    android:id="@+id/affichageLight"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true" 
+    android:layout_below="@id/seekBar_stores"
+    android:text="getLumInt" />
 
 <RadioGroup
 android:id="@+id/group"
@@ -54,7 +62,7 @@ android:orientation="horizontal"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:layout_alignParentRight="true"
-    android:text="Mode automatique" />
+    android:text="Mode manuel" />
 
 <RadioButton
     android:id="@+id/radio1"
@@ -62,9 +70,7 @@ android:orientation="horizontal"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:layout_toLeftOf="@+id/radio2"
-    android:text="Mode manuel" />
+    android:text="Mode automatique" />
 </RadioGroup>
-
-
 
 </RelativeLayout>
