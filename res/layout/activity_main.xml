@@ -15,7 +15,7 @@ android:background="@drawable/proandro">
     android:layout_alignParentLeft="true"
     android:layout_marginTop="20dp"
     android:onClick="pageSettings"
-    android:text="@+id/light"/>
+    android:text="@string/light"/>
     
  <SeekBar
     android:id="@+id/seekBar_light"
@@ -45,7 +45,7 @@ android:background="@drawable/proandro">
     android:layout_height="wrap_content"
     android:layout_alignParentLeft="true" 
     android:layout_below="@id/seekBar_stores"
-    android:text="getLumInt" />
+    android:text="@string/coquine" />
 
 <RadioGroup
 android:id="@+id/group"
