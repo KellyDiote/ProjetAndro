@@ -7,12 +7,11 @@ import org.restlet.resource.ResourceException;
 
 public class RESTLETinterface {
 
-	public static String getLumInt() {
+	public String getLumInt() {
 		ClientResource LumInt = new ClientResource(
-				"http://10.0.2.2:9000/intLight?method=getBrightness");
-		String renvoiLum=null;
+				"http://192.168.1.26:9000/intLight?method=getBrightness");
 		try {
-			renvoiLum = LumInt.get().getText();
+			return LumInt.get().getText();
 		} catch (ResourceException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -20,16 +19,14 @@ public class RESTLETinterface {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		LumInt.release();
-		return renvoiLum;
+		return null;
 	}
 
-	public static void setValue(String device, String method, int value) {
-		ClientResource resource = new ClientResource("http://10.0.2.2:9000/"
+	public static void setValue(String device, String method, int value)
+			throws ResourceException, IOException {
+		ClientResource resource = new ClientResource("http://192.168.1.26:9000/"
 				+ device + "?method=" + method + "&level=" + value);
 		resource.get();
 		resource.release();
 	}
-	
-
 }

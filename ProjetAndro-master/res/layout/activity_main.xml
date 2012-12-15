@@ -1,5 +1,4 @@
-
-
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
 android:layout_width="fill_parent"
@@ -16,7 +15,7 @@ android:background="@drawable/proandro">
     android:layout_alignParentLeft="true"
     android:layout_marginTop="20dp"
     android:onClick="pageSettings"
-    android:text="@string/light"/>
+    android:text="@+id/light"/>
     
  <SeekBar
     android:id="@+id/seekBar_light"
@@ -46,32 +45,7 @@ android:background="@drawable/proandro">
     android:layout_height="wrap_content"
     android:layout_alignParentLeft="true" 
     android:layout_below="@id/seekBar_stores"
-    android:text="@string/temprecup" />
-<TextView 
-    android:id="@+id/Fixerlight"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true" 
-    android:layout_below="@id/affichageLight"
-    android:text="@string/tempaffiche" />
-
-<TextView 
-    android:id="@+id/SeekbarValue"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true" 
-    android:layout_below="@id/Fixerlight"
-    android:text="@string/SeekbarValue" />
-
-<TextView 
-    android:id="@+id/Buttonuse"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true" 
-    android:layout_below="@id/SeekbarValue"
-    android:text="@string/Buttonuse" />
-
-
+    android:text="getLumInt" />
 
 <RadioGroup
 android:id="@+id/group"
